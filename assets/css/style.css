@@ -45,10 +45,13 @@ font-family: poppins_regular;
 header {
     background-image: url("https://images.unsplash.com/photo-1486312699619-be057cfc0342?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80");
     height: 50vh;
+    background-repeat: no-repeat;
+    background-size: –;
 }
 
 body h2 {
     padding: 1.5% 5%;
+    color: #999;
 }
 
 header h1:nth-of-type(1) {
@@ -81,28 +84,116 @@ main section {
     text-align: center;
 }
 
-main section div:nth-of-type(1) {
-    margin: 5% 60% 0 0;
+/* main section div:nth-of-type(1) {
+    margin: 5% 0% 0 0;
     display: inline-block;
+    width: 20vw;
+    border-radius: 5px;
+    grid-column: 1;
 }
 
 main section div:nth-of-type(2) {
-    margin: 5% 0% 0 0;
+    margin: 0 5% 10% 40%;
     display: inline-block;
+    width: 20vw;
+    border-radius: 5px;
+    grid-column: 1;
 }
 
 main section div:nth-of-type(3) {
+    margin: 5% 0% 0 0;
     display: inline-block;
+    width: 20vw;
+    border-radius: 5px;
+    grid-column: 1;
 }
 
 main section div:nth-of-type(4) {
+    margin: 5% 0% 0 0;
     display: inline-block;
+    width: 20vw;
+    border-radius: 5px;
+    grid-column: 2;
 }
 
 main section div:nth-of-type(5) {
+    margin: 5% 0% 0 0;
     display: inline-block;
+    width: 20vw;
+    border-radius: 5px;
+    grid-column: 2;
 }
 
-main section div:nth-of-type(6) {    display: inline-block;}
+main section div:nth-of-type(6) {
+    margin: 5% 0% 0 0;
+    display: inline-block;
+    width: 20vw;
+    border-radius: 5px;
+    grid-column: 2;
+} */
+
+.mauntain_img {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    grid-auto-rows: 100px;
+    grid-template-areas:
+        "a a a a b b b b c c c c"
+        "a a a a b b b b c c c c"
+        "d d d d e e e e f f f f"
+        "d d d d e e e e f f f f";
+    align-items: start;
+}
+
+.mauntains1 {
+    grid-area: a;
+}
+
+.mauntains2 {
+    grid-area: b;
+}
+
+.mauntains3 {
+    grid-area: c;
+}
+
+.mauntains4 {
+    grid-area: d;
+}
+
+.mauntains5 {
+    grid-area: e;
+}
+
+.mauntains6 {
+    grid-area: f;
+}
+
+/* .row_1-div:nth-of-type(1, 2, 3) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.row_2-div:nth-of-type(4, 5, 6) {
+    grid-column: 2;
+    grid-row: 2; */
+}
+
 
 /* ===================== Footer Style ============================== */
+
+footer {
+    margin-top: 100px;
+}
+
+footer h2 {
+    text-align: center;
+    border-top: rgb(108, 108, 108) 1px solid;
+    padding-top: 10%;
+    padding-bottom: 3%;
+}
+
+footer h2 a {
+    color: black;
+    text-decoration: none;
+}
