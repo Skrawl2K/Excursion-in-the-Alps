@@ -205,6 +205,14 @@ main article:nth-of-type(2) section ul li {
     padding-top: 1em;
 }
 
+main article:nth-of-type(2) section ul li span:nth-of-type(1) {
+    color: red;
+}
+
+main article:nth-of-type(2) section ul li span:nth-of-type(5) {
+    color: green;
+}
+
 /* ===================== Footer Style ============================== */
 
 footer {
